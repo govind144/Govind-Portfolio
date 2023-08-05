@@ -17,7 +17,7 @@ const projects = [
     name: 'Portfolio',
     desc: 'A website to introduce myself',
     img: Portfolio,
-    link: 'https://github.com/govind144/Yahoo_Mail',
+    link: 'https://github.com/govind144/Govind-Portfolio',
   },
   // {
   //   id: uuidv4(),
