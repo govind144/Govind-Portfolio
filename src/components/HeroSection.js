@@ -146,8 +146,7 @@ const HeroStyles = styled.div`
     right: 50px;
   }
 
-  .hero__social__indicator,
-  .hero__scrollDown {
+  .hero__social__indicator {
     width: 50px;
     p {
       font-size: 1.6rem;
@@ -163,8 +162,17 @@ const HeroStyles = styled.div`
     }
   }
   .hero__scrollDown {
+    p {
+      font-size: 1.6rem;
+      transform: translateY(-30px) rotate(270deg);
+      letter-spacing: 0.7rem;
+      text-transform: uppercase;
+    }
     img {
-      max-height: 70px;
+      max-height: 45px;
+      width: 16px;
+      margin: 0 auto;
+      object-fit: contain;
     }
   }
 

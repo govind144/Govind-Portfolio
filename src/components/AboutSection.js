@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Button from './Button';
 import SectionTitle from './SectionTitle';
 import PText from './PText';
-import AboutImg from '../assets/images/govind.jpg';
+import AboutImg from '../assets/images/about.png';
 
 const AboutSectionStyles = styled.div`
   padding: 10rem 0;
@@ -14,26 +14,39 @@ const AboutSectionStyles = styled.div`
     text-align: left;
     margin-top: -100px;
   }
-  .aboutSection__left {
+  .aboutSection__left,
+  .aboutSection__right {
+    flex: 1;
+  }
+  /* .aboutSection__right .img{
+    flex: 1;
+    position: relative;
+    top: -40px;
+    bottom: 50px;
+    width: 100%;
+    height: auto;
+    border: 5px solid var(--gray-1);
+  } */
+  /* .aboutSection__left {
     flex: 1;
     margin-left: 100px;
   }
   .aboutSection__right {
     position: relative;
     width: 400px; /*Set the width of the container */
-    height: 490px; /* Set the desired height of the clipped image */
-    overflow: hidden;
+  /*height: 490px; Set the desired height of the clipped image */
+  /*overflow: hidden;
     right: 150px;
     .aboutImg img {
       flex: 1;
       position: relative;
-      top: -50px; /* Decrease the length from the top */
-      bottom: 50px; /* Decrease the length from the bottom */
+      top: -50px; Decrease the length from the top 
+      bottom: 50px; Decrease the length from the bottom
       width: 100%;
       height: auto;
       border: 10px solid var(--gray-1);
-    }
-  }
+    } */
+  } 
   .section-title {
     text-align: left;
   }
