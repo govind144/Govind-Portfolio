@@ -1,10 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import HeroImg from '../assets/images/hero1.jpg';
+import HeroImg from '../assets/images/banner-01.jpg';
 import Button from './Button';
 import SocialMediaArrow from '../assets/images/social-media-arrow.svg';
 import ScrollDownArrow from '../assets/images/scroll-down-arrow.svg';
-import PText from './PText';
+import Facebook from '../assets/images/facebook.jpg';
+import Twitter from '../assets/images/twitter.jpg';
+import Instagram from '../assets/images/instagram.jpg';
+import Linkedin from '../assets/images/linkedin.jpg';
 
 const HeroStyles = styled.div`
   .hero {
@@ -19,7 +22,7 @@ const HeroStyles = styled.div`
   }
   .hero__heading {
     font-size: 2rem;
-    margin-bottom: -4rem;
+    margin-bottom: 10rem;
     position: relative;
     span {
       display: inline-block;
@@ -27,8 +30,8 @@ const HeroStyles = styled.div`
     }
     .hero__name {
       font-family: 'Montserrat SemiBold';
-      font-size: 7rem;
-      color: var(--white);
+      font-size: 5rem;
+      color: darksalmon;
     }
   }
   .hero__img {
@@ -37,31 +40,118 @@ const HeroStyles = styled.div`
     height: 600px;
     margin: 0 auto;
     border: 2px solid var(--gray-1);
+    margin-top: -200px;
   }
   .hero__info {
-    margin-top: -18rem;
+    margin-top: -10rem;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    padding: 2px 0;
+    top: 50%;
+    left: 70%;
+    transform: translate(-70%, -70%);
   }
+  .text {
+    max-width: 420px;
+    margin-bottom: 100px;
+    margin-left: 200px;
+    /* line-height: 1.5; */
+    font-size: 20px;
+    transform: translate(50%, -10%);
+    -webkit-text-fill-color: white;
+    font-weight: bold;
+    font-style: italic;
+    white-space: nowrap;
+  }
+  /* .wrapper {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 15px;
+  }
+  .wrapper .static-txt {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+  }
+  .wrapper .dynamic-txts {
+    margin-left: 15px; 
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+    margin-top: -20px;
+  }
+  .dynamic-txts li {
+    list-style: none;
+    color: #fc6d6d;
+    font-size: 30px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 6s linear infinite;
+  }
+  @keyframes slide {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+  .dynamic-txts li span {
+    position: relative;
+    margin: 5px 0;
+    line-height: 30px;
+  }
+  .dynamic-txts li span::after {
+    content: '';
+    position: relative;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: orange;
+    border-left: 2px solid #fc6d6d;
+    animation: typing 12s linear infinite;
+  }
+  @keyframes typing {
+    0% {
+      left: 0;
+      margin: 0 0 0 0;
+    }
+    10% { 
+      left: 0;
+      margin: 0 -35px 0 35px;
+    }
+    100% {
+      left: calc(100% + 30px);
+      margin: 0 -35px 0 35px;
+    } 
+  }*/
   .hero__social,
   .hero__scrollDown {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     position: absolute;
+
     bottom: 20px;
     width: 50px;
   }
   .hero__social {
-    left: 50px;
+    left: 70px;
+    margin-bottom: 200px;
   }
   .hero__scrollDown {
     right: 50px;
   }
+
   .hero__social__indicator,
   .hero__scrollDown {
     width: 50px;
     p {
       font-size: 1.6rem;
-      transform: translateY(-70px) rotate(90deg);
+      transform: translateY(-30px) rotate(270deg);
       letter-spacing: 0.7rem;
       text-transform: uppercase;
     }
@@ -77,6 +167,7 @@ const HeroStyles = styled.div`
       max-height: 70px;
     }
   }
+
   .hero__social__text {
     ul {
       li {
@@ -84,13 +175,14 @@ const HeroStyles = styled.div`
         a {
           display: inline-block;
           font-size: 1.6rem;
-          transform: rotate(-90deg);
+          transform: rotate(-360deg);
           letter-spacing: 5px;
           margin-bottom: 2rem;
         }
       }
     }
   }
+
   @media only screen and (max-width: 768px) {
     .hero {
       min-height: 750px;
@@ -156,10 +248,38 @@ export default function HeroSection() {
             <img src={HeroImg} alt="" />
           </div>
           <div className="hero__info">
-            <PText>
-              I am working as a Backened developer with 2+
-              years of experience. I love to code and learn new tech.
-            </PText>
+            <p className="text">
+              I am working as a Backened developer <br />
+              with 2+ years of experience.
+            </p>
+            {/* Text animation */}
+            {/* <div className="wrapper">
+              <span>I Love To </span>
+              <span className="static-txt">
+                <b className="dynamic-txts">Code!</b>
+                <b>Develop Backend Services!</b>
+                <b>Design Secure Services!</b>
+                <b>Cooking!</b>
+              </span>
+            </div> */}
+            {/* <div className="wrapper">
+              <div className="static-txt">I Love To</div>
+              <ul className="dynamic-txts">
+                <li>
+                  <span>Code!</span>
+                </li>
+                <li>
+                  <span>Develop!</span>
+                </li>
+                <li>
+                  <span>Design!</span>
+                </li>
+                <li>
+                  <span>Cooking!</span>
+                </li>
+              </ul>
+            </div> */}
+            {/* End of text animation */}
             <Button btnText="see my works" btnLink="/projects" />
           </div>
           <div className="hero__social">
@@ -175,7 +295,7 @@ export default function HeroSection() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    FB
+                    <img src={Facebook} alt="FB" />
                   </a>
                 </li>
                 <li>
@@ -184,7 +304,7 @@ export default function HeroSection() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    TW
+                    <img src={Twitter} alt="TW" />
                   </a>
                 </li>
                 <li>
@@ -193,7 +313,7 @@ export default function HeroSection() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    IG
+                    <img src={Instagram} alt="IG" />
                   </a>
                 </li>
                 <li>
@@ -202,7 +322,7 @@ export default function HeroSection() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    LI
+                    <img src={Linkedin} alt="LI" />
                   </a>
                 </li>
               </ul>

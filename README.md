@@ -1,5 +1,5 @@
 # React Portfolio website
 
-Designed by - [shaif Arfan](http://github.com/shaifarfan) | [web cifar](http://webcifar.com)
+Designed by - [Govind Kumar](https://github.com/govind144) | [GKN]
 
 ![](./ReadMeImages/ReadMeBanner.png)
