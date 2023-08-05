@@ -8,6 +8,7 @@ import Facebook from '../assets/images/facebook.jpg';
 import Twitter from '../assets/images/twitter.jpg';
 import Instagram from '../assets/images/instagram.jpg';
 import Linkedin from '../assets/images/linkedin.jpg';
+import PText from './PText';
 
 const HeroStyles = styled.div`
   .hero {
@@ -43,27 +44,31 @@ const HeroStyles = styled.div`
     margin-top: -200px;
   }
   .hero__info {
-    margin-top: -10rem;
+    margin-top: -30rem;
     display: block;
     position: relative;
     overflow: hidden;
     padding: 2px 0;
-    top: 50%;
+    margin-top: -14%;
     left: 70%;
     transform: translate(-70%, -70%);
+    font-weight: bolder;
+    font-style: oblique;
   }
-  .text {
+  /* .p {
+    -webkit-text-fill-color: cyan;
+  } */
+  /* .text {
     max-width: 420px;
     margin-bottom: 100px;
     margin-left: 200px;
-    /* line-height: 1.5; */
     font-size: 20px;
     transform: translate(50%, -10%);
     -webkit-text-fill-color: white;
     font-weight: bold;
     font-style: italic;
     white-space: nowrap;
-  }
+  } */
   /* .wrapper {
     display: inline-flex;
     align-items: center;
@@ -256,10 +261,10 @@ export default function HeroSection() {
             <img src={HeroImg} alt="" />
           </div>
           <div className="hero__info">
-            <p className="text">
+            <PText>
               I am working as a Backened developer <br />
               with 2+ years of experience.
-            </p>
+            </PText>
             {/* Text animation */}
             {/* <div className="wrapper">
               <span>I Love To </span>

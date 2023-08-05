@@ -46,7 +46,6 @@ const AboutSectionStyles = styled.div`
       height: auto;
       border: 10px solid var(--gray-1);
     } */
-  } 
   .section-title {
     text-align: left;
   }
