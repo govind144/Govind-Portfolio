@@ -58,6 +58,7 @@ export default function ProjectItem({
           <h3 className="projectItem__title">{title}</h3>
         </Link>
         <p className="projectItem__desc">{desc}</p>
+        {/* <p className="text">click below to open source code</p> */}
         {link && (
           <a
             className="projectButton"
@@ -65,7 +66,7 @@ export default function ProjectItem({
             target="_blank"
             rel="noreferrer"
           >
-            Open Project
+            Click to Open Source Code
           </a>
         )}
       </div>

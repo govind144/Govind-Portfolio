@@ -1,6 +1,6 @@
 import { v4 as uuidv4 } from 'uuid';
 import mailImg from '../images/mail-icon-image.jpg';
-import Portfolio from '../images/portolio.jpg';
+import Portfolio from '../images/portfolio.jpg';
 // import CoinTrackerImg from '../images/cointracker.jpg';
 // import CavinImg from '../images/cavinimg.jpg';
 
@@ -15,7 +15,7 @@ const projects = [
   {
     id: uuidv4(),
     name: 'Portfolio',
-    desc: 'A website to introduce myself',
+    desc: 'A website to introduce myself.',
     img: Portfolio,
     link: 'https://github.com/govind144/Govind-Portfolio',
   },
